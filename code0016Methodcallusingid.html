@@ -1,0 +1,21 @@
+<html>
+    <p id="para1">This is a paragraph</p>
+    <body>
+        <script>
+            // return type method
+            function calculatefact(){
+                var fact=1;
+                var num=window.prompt();
+                for(var i=num;i>=1;i--){
+                    fact = fact*i;
+                }
+                return fact;
+            }
+            var factres=calculatefact(); // call method 
+
+            document.getElementById("para1").innerHTML=factres;
+            console.log(factres);
+
+        </script>
+    </body>
+</html>
